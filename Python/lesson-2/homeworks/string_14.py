@@ -1,0 +1,1 @@
+print("Equal" if input("str1 = ") == input("str2 = ") else "Not equal")
