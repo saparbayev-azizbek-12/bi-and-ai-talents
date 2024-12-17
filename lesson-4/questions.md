@@ -1,4 +1,3 @@
-```markdown
 # Python Questions and Answers
 
 ## Difference Between `continue` and `break` Statements
