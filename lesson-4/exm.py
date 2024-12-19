@@ -1,1 +1,2 @@
-print('Hello world!')
+a = """Hello "msm" ojfroj"""
+print(a)
