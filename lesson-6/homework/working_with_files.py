@@ -18,10 +18,8 @@ def read_or_create_file(filename):
 def clear_marks(text):
     cleared_text = ""
     for char in text:
-        if char in MARKS:
-            cleared_text += ' '
-        else:
-            cleared_text += char
+        if char in MARKS: cleared_text += ' '
+        else: cleared_text += char
     return cleared_text
 
 def count_words(text):
