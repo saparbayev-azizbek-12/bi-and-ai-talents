@@ -12,12 +12,12 @@ class Animal:
     
 class Cow(Animal):
     def __init__(self, name, age):
-        super().__init__(self, name, age, 'Cow')
+        super().__init__(name, age, 'Cow')
         self.milk_produce = 0
 
-    def milk_produce(self, amount):
+    def produce_milk(self, amount):
         self.milk_produce += amount
-        return f"{self.name} has produced {self.milk_produce} liter milk every day"
+        print(f"{self.name} has produced {self.milk_produce} liter milk every day")
     
 class Chicken(Animal):
     def __init__(self, name, age):
@@ -27,3 +27,11 @@ class Chicken(Animal):
     def lay_egg(self):
         self.eggs_laid += 1
         print(f"{self.name} laid an egg. Total eggs laid: {self.eggs_laid}")
+
+cow = Cow("Daisy", 5)
+print(cow.eat())
+cow.produce_milk(15)
+
+chicken = Chicken("Clara", 2)
+print(chicken.eat())
+chicken.lay_egg()
