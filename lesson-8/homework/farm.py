@@ -24,7 +24,6 @@ class Chicken(Animal):
         super().__init__(name, age, "Chicken")
         self.eggs_laid = 0
     
-    
     def lay_egg(self):
         self.eggs_laid += 1
         print(f"{self.name} laid an egg. Total eggs laid: {self.eggs_laid}")
