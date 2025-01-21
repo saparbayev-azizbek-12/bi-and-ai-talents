@@ -62,7 +62,7 @@ def bonus_task():
 def advanced_query():
     with sqlite3.connect("roster.db") as c:
         cursor = c.cursor()
-        query = "SELECT * FROM Students ORDER BY Age ASC"
+        query = "SELECT * FROM Students ORDER BY Age DESC"
         data = cursor.execute(query)
     data_ = data.fetchall()
     for n in data_:
